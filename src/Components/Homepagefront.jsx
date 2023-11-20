@@ -9,8 +9,8 @@ const Homepagefront = () => {
         'https://img.freepik.com/premium-psd/3d-illustration-drums-3_544758-9138.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699747200&semt=ais',
       ];
   return (
-    <div className="Hello" style={{float:"left"}}>
-    <Paper elevation={12} style={{width:"1100px",height:"780px", backgroundColor:"rgb(50,50,50)", color:"white"}}>
+    <div className="Hello" style={{float:"left",marginRight:"13px"}}>
+    <Paper elevation={12} style={{width:"1050px",height:"780px", backgroundColor:"rgb(50,50,50)", color:"white",marginTop:"8px"}}>
     
         <div style={{display:"flex",justifyContent:"center"}}>
             <h1>Top Sellers</h1>
