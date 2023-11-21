@@ -63,19 +63,13 @@ export default function MenuApBar() {
             </Button>
             </Typography>
             <Typography
-          sx={{ flexGrow: 0, paddingLeft: "10px", marginBottom: "5px" }}
+          sx={{ flexGrow: 1, paddingLeft: "10px", marginBottom: "5px" }}
         >
             <Button color="primary" variant="text">
               Services
             </Button>
         </Typography>
-            <Typography
-          sx={{ flexGrow: 1, paddingLeft: "10px", marginBottom: "5px" }}
-        >
-            <Button color="primary" variant="text">
-              Others
-            </Button>
-        </Typography>
+          
         
           <AddShoppingCartIcon style={{marginLedt:"60px",flexGrow:1,fontSize:"40px"}}></AddShoppingCartIcon>
         

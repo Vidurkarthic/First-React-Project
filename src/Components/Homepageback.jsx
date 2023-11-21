@@ -9,6 +9,7 @@ import Homepagefront from "./Homepagefront";
 import Footer from "./Footer";
 
 
+
 const Home = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const Home = () => {
       <Homepagefront></Homepagefront>
       </div>
       </div>
+      
       
    
     <Footer></Footer>

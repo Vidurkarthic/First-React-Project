@@ -7,7 +7,8 @@ const Homepagefront = () => {
         'https://img.freepik.com/premium-photo/toy-train-playful-colorful-great-children-s-entertainment_115919-27641.jpg',
         'https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-vibrant-wooden-xylophone-and-mallets-set-against-a-playful-pink-backdrop-image_3816263.jpg',
         'https://img.freepik.com/premium-psd/3d-illustration-drums-3_544758-9138.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699747200&semt=ais',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1A2oLahWau0Je3pbrW6NdaqCLghGEz_mBQ&usqp=CAU'
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1A2oLahWau0Je3pbrW6NdaqCLghGEz_mBQ&usqp=CAU',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4-BhcbWLaZ5UeYexZbrg4TlEm4kc5y7syIg&usqp=CAU'
       ];
   return (
     <div className="Hello" style={{float:"left",marginRight:"13px"}}>
@@ -80,6 +81,18 @@ const Homepagefront = () => {
             <h3>Fluffy Teddy Bear</h3>
             <br></br>
             <h4>M.R.P:<strike>499/-</strike><br></br>Price: 399/-</h4>
+            </center>
+            </div>
+            </div>
+          </td>
+          <td>
+            <img src={imageUrls[5]} alt="Image 4" style={{ width: '200px', height: '200px', objectFit: 'cover' }} />
+            <br></br>
+            <div style={{display:"flex",justifyContent:"center"}}>
+            <div><center>
+            <h3>Tent kit </h3>
+            <br></br>
+            <h4>M.R.P:<strike>1499/-</strike><br></br>Price: 999/-</h4>
             </center>
             </div>
             </div>
