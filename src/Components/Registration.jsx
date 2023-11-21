@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 const Registration = () => {
   return (
+    
     <center>
       <div
         className="R"

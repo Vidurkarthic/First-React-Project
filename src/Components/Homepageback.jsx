@@ -7,6 +7,8 @@ import Category from "./Category";
 import Homepagefront from "./Homepagefront";
 
 import Footer from "./Footer";
+
+
 const Home = () => {
   return (
     <div>
@@ -17,8 +19,10 @@ const Home = () => {
       <Category></Category>
       <Homepagefront></Homepagefront>
       </div>
-    <Footer></Footer>
       </div>
+      
+   
+    <Footer></Footer>
 
     </div>
   );

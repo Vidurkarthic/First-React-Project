@@ -3,7 +3,7 @@ import AppBar from "@mui/material/AppBar";
 
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import { Link } from "react-router-dom";
 
 import { Button } from "@mui/material";
@@ -26,12 +26,13 @@ export default function MenuApBar() {
 
   return (
     <AppBar
-      elevation={12}
+      elevation={20}
       className="Box"
       position="static"
       style={{
-        backgroundColor: "transparent",
+        backgroundColor: "white",
         color: "black",
+        opacity:"90%"
         
       }}
     >
@@ -69,12 +70,15 @@ export default function MenuApBar() {
             </Button>
         </Typography>
             <Typography
-          sx={{ flexGrow: 0, paddingLeft: "10px", marginBottom: "5px" }}
+          sx={{ flexGrow: 1, paddingLeft: "10px", marginBottom: "5px" }}
         >
             <Button color="primary" variant="text">
               Others
             </Button>
         </Typography>
+        
+          <AddShoppingCartIcon style={{marginLedt:"60px",flexGrow:1,fontSize:"40px"}}></AddShoppingCartIcon>
+        
       </Toolbar>
     </AppBar>
   );

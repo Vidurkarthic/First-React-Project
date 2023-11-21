@@ -7,7 +7,7 @@ import { Paper } from "@mui/material";
 const Category = () => {
   return (
     <div style={{float:"left",paddingRight:"80px"}}>
-    <Paper elevation={12} style={{width:"250px",marginLeft:"30px",backgroundColor:"rgb(50,50,50)",alignItems:"center" , height:"780px", marginTop:"10px"}}>
+    <Paper elevation={12} style={{width:"250px",marginLeft:"30px",backgroundColor:"white",alignItems:"center" , height:"780px", marginTop:"10px"}}>
     <div>
       <div className="box">
         <div style={{marginRight:"70px"}}>
@@ -15,7 +15,7 @@ const Category = () => {
             className="img"
             src={myImage}
             alt="Example"
-            style={{ maxWidth: "105%", height: "190px" }}
+            style={{maxWidth: "100%", height: "190px" }}
           />
         </div>
         <table className="custom-table" style={{marginLeft:"30px"}}>
@@ -26,6 +26,7 @@ const Category = () => {
                   variant="contained"
                   size="large"
                   content="centre"
+                  backgroundColor="#00ff00"
                   style={{ width: "150px" }}
                 >
                   Paintings

@@ -12,6 +12,7 @@
 
 .custom-table td button:hover {
   background-color: #48ff00;
+  color:brown;
 }
 .img {
   background-color: transparent;

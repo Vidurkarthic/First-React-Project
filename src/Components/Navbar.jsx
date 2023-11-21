@@ -80,8 +80,8 @@ export default function MenuAppBar() {
       className="Box"
         position="static"
         style={{
-          backgroundColor: "white",
-          color: "black",
+          backgroundColor: "black",
+          color: "white",
         }}
       >
         <Toolbar>
@@ -145,7 +145,7 @@ export default function MenuAppBar() {
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
               >
-                
+                <MenuItem>Log out</MenuItem>
               </Menu>
             </div>
           )}

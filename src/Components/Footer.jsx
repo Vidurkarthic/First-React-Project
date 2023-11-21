@@ -17,7 +17,7 @@ const Footer = () => {
         <Button variant="text">PRODUCTS</Button>
         <Button variant="text">CONTACT</Button>
       </div>
-      <div className="instagram-button">
+      <div className="instagram-button" style={{marginTop:"200px"}}>
         <a
           href="https://www.instagram.com/toyshop_tz/"
           target="_blank"

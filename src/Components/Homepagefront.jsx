@@ -7,10 +7,11 @@ const Homepagefront = () => {
         'https://img.freepik.com/premium-photo/toy-train-playful-colorful-great-children-s-entertainment_115919-27641.jpg',
         'https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-vibrant-wooden-xylophone-and-mallets-set-against-a-playful-pink-backdrop-image_3816263.jpg',
         'https://img.freepik.com/premium-psd/3d-illustration-drums-3_544758-9138.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699747200&semt=ais',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG1A2oLahWau0Je3pbrW6NdaqCLghGEz_mBQ&usqp=CAU'
       ];
   return (
     <div className="Hello" style={{float:"left",marginRight:"13px"}}>
-    <Paper elevation={12} style={{width:"1050px",height:"780px", backgroundColor:"rgb(50,50,50)", color:"white",marginTop:"8px"}}>
+    <Paper elevation={12} style={{width:"1050px",height:"780px", backgroundColor:"white", color:"black",marginTop:"8px"}}>
     
         <div style={{display:"flex",justifyContent:"center"}}>
             <h1>Top Sellers</h1>
@@ -46,7 +47,7 @@ const Homepagefront = () => {
             </div>
           </td>
           <td >
-            <img src={imageUrls[1]} alt="Image 2" style={{ width: '200px', height: '200px', objectFit: 'cover' }} />
+            <img src={imageUrls[4]} alt="Image 2" style={{ width: '200px', height: '200px', objectFit: 'cover' }} />
             <br></br>
             <div style={{display:"flex",justifyContent:"center"}}>
             <div><center>
