@@ -19,9 +19,7 @@ export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const handleChange = (event) => {
-    setAuth(event.target.checked);
-  };
+ 
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -80,8 +78,8 @@ export default function MenuAppBar() {
       className="Box"
         position="static"
         style={{
-          backgroundColor: "black",
-          color: "white",
+          backgroundColor: "white",
+          color: "black",
         }}
       >
         <Toolbar>
@@ -112,7 +110,7 @@ export default function MenuAppBar() {
           </Search>
 
           <Link to="/Login">
-            <Button variant="outlined" sx={{ margin: "10px" }}>
+            <Button variant="text"  sx={{ margin: "10px"}}>
               Login
             </Button>
           </Link>

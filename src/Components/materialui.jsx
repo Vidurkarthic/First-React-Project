@@ -41,9 +41,11 @@ const Materialui = () => {
             />
             <br></br>
             <br></br>
+            <Link to="/">
             <Button type="submit" variant="contained" color="primary">
               Login 
             </Button>
+            </Link>
             <br></br>
           </form>
           <br></br>

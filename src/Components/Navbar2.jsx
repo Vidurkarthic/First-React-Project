@@ -30,7 +30,7 @@ export default function MenuApBar() {
       className="Box"
       position="static"
       style={{
-        backgroundColor: "white",
+        backgroundColor: "transparent",
         color: "black",
         opacity:"90%"
         
@@ -41,7 +41,7 @@ export default function MenuApBar() {
           sx={{ flexGrow: 0, paddingLeft: "30px", marginBottom: "5px" }}
         >
           <Link to="/">
-            <Button color="primary" variant="text">
+            <Button  variant="text" style={{color:"black"}}>
               Home
             </Button>
           </Link>
@@ -50,7 +50,7 @@ export default function MenuApBar() {
           sx={{ flexGrow: 0, paddingLeft: "10px", marginBottom: "5px" }}
         >
           <Link to="/About">
-            <Button color="primary" variant="text">
+            <Button color="primary" variant="text" style={{color:"black"}}>
               About
             </Button>
           </Link>
@@ -58,14 +58,14 @@ export default function MenuApBar() {
         <Typography
           sx={{ flexGrow: 0, paddingLeft: "10px", marginBottom: "5px" }}
         >
-            <Button color="primary" variant="text">
+            <Button color="primary" variant="text" style={{color:"black"}}>
               Products
             </Button>
             </Typography>
             <Typography
           sx={{ flexGrow: 1, paddingLeft: "10px", marginBottom: "5px" }}
         >
-            <Button color="primary" variant="text">
+            <Button color="primary" variant="text" style={{color:"black"}}>
               Services
             </Button>
         </Typography>

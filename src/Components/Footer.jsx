@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer2.css";
 import { Button, Typography } from "@mui/material";
 import { FaInstagram } from "react-icons/fa";
 

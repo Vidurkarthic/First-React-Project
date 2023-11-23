@@ -53,9 +53,11 @@ const Registration = () => {
             />
             <br></br>
             <br></br>
+            <Link to="/Login">
             <Button type="submit" variant="contained" color="primary">
               Register
             </Button>
+            </Link>
             <br></br>
           </form>
           <br></br>

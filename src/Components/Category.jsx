@@ -6,8 +6,8 @@ import { Paper } from "@mui/material";
 
 const Category = () => {
   return (
-    <div style={{float:"left",paddingRight:"80px"}}>
-    <Paper elevation={12} style={{width:"250px",marginLeft:"30px",backgroundColor:"white",alignItems:"center" , height:"780px", marginTop:"10px"}}>
+    <div style={{float:"left",paddingRight:"30px"}}>
+    <Paper className="back" elevation={12} style={{width:"250px",marginLeft:"30px",backgroundColor:"white",alignItems:"center" , height:"780px", marginTop:"50px"}}>
     <div>
       <div className="box">
         <div style={{marginRight:"70px"}}>
