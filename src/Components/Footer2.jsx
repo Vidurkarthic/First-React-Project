@@ -24,6 +24,7 @@ const Footer2 = () => {
         </div>
         <div className="footer-section">
           <h3>Explore</h3>
+          <a href="/">Home</a>
           <a href="/products">Products</a>
           <a href="/categories">Categories</a>
           <a href="/brands">Brands</a>
@@ -31,7 +32,7 @@ const Footer2 = () => {
         </div>
         <div className="footer-section">
           <h3>Information</h3>
-          <a href="/about">About Us</a>
+          <a href="/About">About Us</a>
           <a href="/contact">Contact Us</a>
           <a href="/faq">FAQ</a>
           <a href="/blog">Blog</a>

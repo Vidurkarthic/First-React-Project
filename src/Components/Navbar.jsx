@@ -33,9 +33,9 @@ export default function MenuAppBar() {
   const Search = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.black, 0.15),
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
     "&:hover": {
-      backgroundColor: alpha(theme.palette.common.black, 0.15),
+      backgroundColor: alpha(theme.palette.common.white, 0.25),
     },
     marginLeft: 0,
 
@@ -78,8 +78,8 @@ export default function MenuAppBar() {
       className="Box"
         position="static"
         style={{
-          backgroundColor: "white",
-          color: "black",
+          backgroundColor: "black",
+          color: "white",
         }}
       >
         <Toolbar>

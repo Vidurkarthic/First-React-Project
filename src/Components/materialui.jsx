@@ -1,8 +1,8 @@
 import React from "react";
-import { Paper, TextField, Typography, Button } from "@mui/material";
+import { Paper, TextField, Typography, Button, Stack } from "@mui/material";
 import "./materialui.css";
 import { Link } from "react-router-dom";
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
 
 const Materialui = () => {
   return (
@@ -13,6 +13,7 @@ const Materialui = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          flexDirection: "column",
         }}
       >
         <Paper
@@ -23,15 +24,17 @@ const Materialui = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            backgroundColor:'rgba(240, 240, 240,0.7)',
+            backgroundColor: "rgba(240, 240, 240,0.7)",
           }}
         >
-          <AccountCircleSharpIcon style={{fontSize:"60px"}}></AccountCircleSharpIcon>
+          <AccountCircleSharpIcon
+            style={{ fontSize: "60px" }}
+          ></AccountCircleSharpIcon>
           <br></br>
           <Typography variant="h5">Login</Typography>
-          <form style={{ width: "100%", marginTop: 10 }}>
+          <form style={{ marginTop: 10}}>
+            <Stack direction="column">
             <TextField label="Username" variant="outlined" required />
-            <br></br>
             <br></br>
             <TextField
               label="Password"
@@ -40,12 +43,12 @@ const Materialui = () => {
               required
             />
             <br></br>
-            <br></br>
-            <Link to="/">
+            
             <Button type="submit" variant="contained" color="primary">
-              Login 
+              Login
             </Button>
-            </Link>
+            </Stack>
+            
             <br></br>
           </form>
           <br></br>

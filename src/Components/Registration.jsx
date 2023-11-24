@@ -1,5 +1,5 @@
 import React from "react";
-import { Paper, TextField, Typography, Button } from "@mui/material";
+import { Paper, TextField, Typography, Button ,Stack} from "@mui/material";
 import "./Registration.css";
 import { Link } from "react-router-dom";
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
@@ -27,15 +27,13 @@ const Registration = () => {
         >
           <SupervisedUserCircleIcon style={{fontSize:"60px"}}></SupervisedUserCircleIcon>
           <Typography variant="h5">Sign Up/Register</Typography>
-          <form style={{ width: "100%", marginTop: 10 }}>
+          <form style={{ marginTop: 10 }}>
+            <Stack direction="column">
             <TextField label="First Name" variant="outlined" required />
-            <br></br>
             <br></br>
             <TextField label="Last Name" variant="outlined" required />
             <br></br>
-            <br></br>
             <TextField label="Username" variant="outlined" required />
-            <br></br>
             <br></br>
             <TextField
               label="Password"
@@ -44,7 +42,6 @@ const Registration = () => {
               required
             />
             <br></br>
-            <br></br>
             <TextField
               label="Confirm Password"
               type="password"
@@ -52,13 +49,13 @@ const Registration = () => {
               required
             />
             <br></br>
-            <br></br>
             <Link to="/Login">
             <Button type="submit" variant="contained" color="primary">
               Register
             </Button>
             </Link>
             <br></br>
+            </Stack>
           </form>
           <br></br>
           <Link to="/Login">Already a Customer.</Link>
