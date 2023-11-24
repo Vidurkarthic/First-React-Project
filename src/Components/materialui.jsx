@@ -43,10 +43,11 @@ const Materialui = () => {
               required
             />
             <br></br>
-            
+            <Link to="/">
             <Button type="submit" variant="contained" color="primary">
               Login
             </Button>
+            </Link>
             </Stack>
             
             <br></br>
