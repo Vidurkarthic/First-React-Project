@@ -7,8 +7,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import {toast} from 'react-toastify';
+import { useContext } from "react";
+import { userContext } from "./Context";
+
 
 const Materialui = () => {
+  const [user, setuser] = useContext(userContext);
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [pwd, setpwd] = useState("");
@@ -19,14 +23,15 @@ const Materialui = () => {
     try {
       const apiurl = `http://localhost:8000/user?uname=${username}`;
       const response = await axios.get(apiurl);
-      
       if (
         response.data.length !== 0 &&
         
         response.data[0].pwd === pwd
       ) {
         // seterro(false);
+
         toast.success('Logged in Successfully.');
+        setuser(username);
         navigate('/');
         
       } else {

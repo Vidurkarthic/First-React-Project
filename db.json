@@ -44,6 +44,15 @@
       "pwd": "12345",
       "cpwd": "12345",
       "id": 5
+    },
+    {
+      "fname": "abcd",
+      "lname": "abcd",
+      "uname": "abcd",
+      "email": "abcd@gmail.com",
+      "pwd": "12345",
+      "cpwd": "12345",
+      "id": 6
     }
   ]
 }

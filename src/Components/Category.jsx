@@ -39,6 +39,7 @@ const Category = () => {
             </tr>
             <tr>
               <td>
+                <Link to="/IndoorToys">
                 <Button
                   variant="contained"
                   size="large"
@@ -47,6 +48,7 @@ const Category = () => {
                 >
                   Indoor Toys
                 </Button>
+                </Link>
               </td>
             </tr>
             <tr>

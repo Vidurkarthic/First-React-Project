@@ -78,7 +78,7 @@ export default function Paintings2() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image=""
+                  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFkcFL_-Hs2Jqs9SdoTGpandgY_wqGVtOGw&usqp=CAU"
                   alt="green iguana"
                 />
                 <CardContent>
@@ -368,7 +368,7 @@ export default function Paintings2() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image=""
+                  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwbueTBkzaoQftLQZYf3os2hmbVUyd9nLuLw&usqp=CAU"
                   alt="green iguana"
                 />
                 <CardContent>

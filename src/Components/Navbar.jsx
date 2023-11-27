@@ -13,11 +13,13 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { Button } from "@mui/material";
+import { userContext } from "./Context";
 
 
 export default function MenuAppBar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [user, setuser] = React.useContext(userContext);
 
  
 
@@ -97,6 +99,8 @@ export default function MenuAppBar() {
           >
             Kiddin' Around
           </Typography>
+          
+          <h4 style = {{color : 'white'}}>Hi..Playful {user}</h4>
           
           
           <Search>

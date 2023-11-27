@@ -9,7 +9,6 @@ import OurDealers from "./Components/OurDealers";
    return (
      <div>
       
-       <OurDealers></OurDealers>
      </div>
    );
  };

@@ -89,27 +89,27 @@ export default function MenuApBar() {
         </Link>
         <Link to="/Paintings">
           <Button variant="text" sx={{color:"black"}}>
-        <MenuItem >Paintings</MenuItem>
+        <MenuItem >Indoor Toys</MenuItem>
           </Button>
         </Link>
         <Link to="/Paintings">
           <Button variant="text" sx={{color:"black"}}>
-        <MenuItem >Paintings</MenuItem>
+        <MenuItem >Outdoor Toys</MenuItem>
           </Button>
         </Link>
         <Link to="/Paintings">
           <Button variant="text" sx={{color:"black"}}>
-        <MenuItem >Paintings</MenuItem>
+        <MenuItem >Wooden Toys</MenuItem>
           </Button>
         </Link>
         <Link to="/Paintings">
           <Button variant="text" sx={{color:"black"}}>
-        <MenuItem >Paintings</MenuItem>
+        <MenuItem >Montessori Toys</MenuItem>
           </Button>
         </Link>
         <Link to="/Paintings">
           <Button variant="text" sx={{color:"black"}}>
-        <MenuItem >Paintings</MenuItem>
+        <MenuItem >Born Baby Products</MenuItem>
           </Button>
         </Link>
         </Stack>
