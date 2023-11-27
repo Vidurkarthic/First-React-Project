@@ -1,14 +1,15 @@
 import React from 'react';
-import MenuAppBar from './Navbar';
+
 import { Paper } from '@mui/material';
 import Footer2 from './Footer2';
+import MenuApBar from './Navbar2';
 
 
 const AboutUsPage = () => {
   return (
     <div>
     <div className="about-us" style={{backgroundImage:`url(${"https://st.depositphotos.com/1298561/4807/v/950/depositphotos_48071139-stock-illustration-doodle-baby-pattern-background.jpg"})`,height:"150vh"}}>
-      <MenuAppBar></MenuAppBar>;
+      <MenuApBar></MenuApBar>
       
       <Paper elevation={12} style={{width:"1200px",marginLeft:"130px",marginTop:"70px", height:"850px"}}>
       <section className="hero" style={{margin:"20px"}}>

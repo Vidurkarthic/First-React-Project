@@ -3,8 +3,44 @@ import { Paper, TextField, Typography, Button, Stack } from "@mui/material";
 import "./materialui.css";
 import { Link } from "react-router-dom";
 import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
+import {toast} from 'react-toastify';
 
 const Materialui = () => {
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [pwd, setpwd] = useState("");
+  const [erro, seterro] = useState("");
+  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const apiurl = `http://localhost:8000/user?uname=${username}`;
+      const response = await axios.get(apiurl);
+      
+      if (
+        response.data.length !== 0 &&
+        
+        response.data[0].pwd === pwd
+      ) {
+        // seterro(false);
+        toast.success('Logged in Successfully.');
+        navigate('/');
+        
+      } else {
+        seterro("Username or password is incorrect");
+        toast.error("Incorrect Username or Password.");
+        
+        
+      }
+    } catch (erro) {
+      console.error('Error during API call:', erro);
+      // Handle error, maybe seterro(true) and navigate('/')
+    }
+  };
+  
   return (
     <center>
       <div
@@ -32,24 +68,39 @@ const Materialui = () => {
           ></AccountCircleSharpIcon>
           <br></br>
           <Typography variant="h5">Login</Typography>
-          <form style={{ marginTop: 10}}>
+          <form onSubmit={handleSubmit} style={{ marginTop: 10 }}>
             <Stack direction="column">
-            <TextField label="Username" variant="outlined" required />
-            <br></br>
-            <TextField
-              label="Password"
-              type="password"
-              variant="outlined"
-              required
-            />
-            <br></br>
-            <Link to="/">
-            <Button type="submit" variant="contained" color="primary">
-              Login
-            </Button>
-            </Link>
+              <TextField
+                label="Username"
+                variant="outlined"
+                required
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+              <br></br>
+              <TextField
+                label="Password"
+                type="password"
+                variant="outlined"
+                value={pwd}
+                onChange={(e) => setpwd(e.target.value)}
+                required
+              />
+              
+              
+              <br></br>
+              {erro && <p>{erro}</p>}
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                
+                
+              on>
+                Login
+              </Button>
             </Stack>
-            
+
             <br></br>
           </form>
           <br></br>

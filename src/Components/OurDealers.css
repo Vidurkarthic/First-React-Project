@@ -1,6 +1,6 @@
 .back{
     background: linear-gradient(45deg, 
-    rgb(67, 67, 67),rgb(0, 0, 0)
+    rgb(198, 195, 195),rgb(0, 0, 0)
     );
     background-size: 50% 400%;
     animation: gradientAnimation 10s ease infinite;

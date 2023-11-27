@@ -5,7 +5,7 @@ import "./Homepageback.css";
 import MenuApBar from "./Navbar2";
 import Category from "./Category";
 
-import Footer from "./Footer";
+
 
 import RecipeReviewCard from "./TopSells";
 import { Stack } from "@mui/material";

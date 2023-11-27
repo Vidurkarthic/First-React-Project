@@ -110,7 +110,7 @@ export default function MenuAppBar() {
           </Search>
 
           <Link to="/Login">
-            <Button variant="text"  sx={{ margin: "10px"}}>
+            <Button variant="text"  sx={{ margin: "10px" ,color:"white"}}>
               Login
             </Button>
           </Link>

@@ -3,6 +3,7 @@ import "./Category.css";
 import Button from "@mui/material/Button";
 import myImage from "./GOLDEN-HOUR.png";
 import { Paper } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -22,6 +23,8 @@ const Category = () => {
           <tbody>
             <tr>
               <td>
+                
+                <Link to="/Paintings">
                 <Button
                   variant="contained"
                   size="large"
@@ -31,6 +34,7 @@ const Category = () => {
                 >
                   Paintings
                 </Button>
+                </Link>
               </td>
             </tr>
             <tr>

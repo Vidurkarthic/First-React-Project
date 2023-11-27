@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaPinterest } from 'react-icons/fa';
+import './Footer2.css';
 
 const Footer2 = () => {
   return (
@@ -33,7 +34,7 @@ const Footer2 = () => {
         <div className="footer-section">
           <h3>Information</h3>
           <a href="/About">About Us</a>
-          <a href="/contact">Contact Us</a>
+          <a href="/ContactUs">Contact Us</a>
           <a href="/faq">FAQ</a>
           <a href="/blog">Blog</a>
         </div>

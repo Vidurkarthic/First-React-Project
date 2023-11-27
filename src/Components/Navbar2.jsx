@@ -3,10 +3,14 @@ import AppBar from "@mui/material/AppBar";
 
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import ShoppingCartSharpIcon from '@mui/icons-material/ShoppingCartSharp';
 import { Link } from "react-router-dom";
 
-import { Button } from "@mui/material";
+import { Button, IconButton, Stack } from "@mui/material";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 export default function MenuApBar() {
   const [auth, setAuth] = React.useState(true);
@@ -24,15 +28,21 @@ export default function MenuApBar() {
     setAnchorEl(null);
   };
 
+  const [age, setAge] = React.useState('');
+
+  const handleChange2 = (event) => {
+    setAge(event.target.value);
+  };
+
   return (
     <AppBar
       elevation={20}
       className="Box"
       position="static"
       style={{
-        backgroundColor: "transparent",
+        backgroundColor: "white",
         color: "black",
-        opacity:"90%"
+        opacity:"91%"
         
       }}
     >
@@ -55,23 +65,63 @@ export default function MenuApBar() {
             </Button>
           </Link>
         </Typography>
-        <Typography
+            <Typography
           sx={{ flexGrow: 0, paddingLeft: "10px", marginBottom: "5px" }}
         >
+          <Link to="/ContactUs">
+
             <Button color="primary" variant="text" style={{color:"black"}}>
-              Products
+              Contact Us
             </Button>
-            </Typography>
-            <Typography
+          </Link>
+        </Typography>
+        <Typography
           sx={{ flexGrow: 1, paddingLeft: "10px", marginBottom: "5px" }}
         >
-            <Button color="primary" variant="text" style={{color:"black"}}>
-              Services
-            </Button>
-        </Typography>
+            <FormControl sx={{ m: 1, minWidth: 120 ,color:"black"}} size="small">
+      <InputLabel>Products</InputLabel>
+      <Select>
+        <Stack direction="column">
+        <Link to="/Paintings">
+          <Button variant="text" sx={{color:"black"}}>
+        <MenuItem >Paintings</MenuItem>
+          </Button>
+        </Link>
+        <Link to="/Paintings">
+          <Button variant="text" sx={{color:"black"}}>
+        <MenuItem >Paintings</MenuItem>
+          </Button>
+        </Link>
+        <Link to="/Paintings">
+          <Button variant="text" sx={{color:"black"}}>
+        <MenuItem >Paintings</MenuItem>
+          </Button>
+        </Link>
+        <Link to="/Paintings">
+          <Button variant="text" sx={{color:"black"}}>
+        <MenuItem >Paintings</MenuItem>
+          </Button>
+        </Link>
+        <Link to="/Paintings">
+          <Button variant="text" sx={{color:"black"}}>
+        <MenuItem >Paintings</MenuItem>
+          </Button>
+        </Link>
+        <Link to="/Paintings">
+          <Button variant="text" sx={{color:"black"}}>
+        <MenuItem >Paintings</MenuItem>
+          </Button>
+        </Link>
+        </Stack>
+      </Select>
+    </FormControl>
+            </Typography>
           
-        
-          <AddShoppingCartIcon style={{marginLedt:"60px",flexGrow:1,fontSize:"40px"}}></AddShoppingCartIcon>
+        <Typography>
+          <IconButton>
+          <ShoppingCartSharpIcon style={{flexGrow:1,fontSize:"40px",color:"black"}}></ShoppingCartSharpIcon>
+          </IconButton>
+        </Typography>
         
       </Toolbar>
     </AppBar>
